@@ -12,7 +12,7 @@ Gensim is Licensed under  GNU LGPLv2.1 which requires modifications to Gensim (i
 ### What is this repository for? ###
 
 **Quick summary:**
- Topic Modeling on collection of documents or texts in python using Gensim library.
+ Topic Modeling on collection of documents or texts fetched from database in python3 using Gensim library.
  The current version writes CSVs as output under 'output' directory in project. One for retrieved topics along with corresponding words and another csv containing topic distribution for raw texts (unseen documents can be used)
  
  **NOTE:** Delete contents of data dir (which will store dictionary and corpus) if texts or documents changes on which topic modeling is performed. 
