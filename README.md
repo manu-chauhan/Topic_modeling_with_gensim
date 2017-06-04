@@ -1,8 +1,8 @@
 # Topic_modeling_with_gensim
 
-Copyright (C) 2017 Manu Chauhan (manuchauhan1992@gmail.com)
+**Copyright (C) 2017 Manu Chauhan (manuchauhan1992@gmail.com)**
 
-Distributed under GNU Affero General Public License 3.0 or later
+**Distributed under GNU Affero General Public License 3.0 or later**
 
 Gensim is Licensed under  GNU LGPLv2.1 which requires modifications to Gensim (if any and if distributed to others) to be open sourced. For  more info : https://radimrehurek.com/gensim/about.html
 
@@ -15,7 +15,7 @@ Gensim is Licensed under  GNU LGPLv2.1 which requires modifications to Gensim (i
  Topic Modeling on collection of documents or texts in python using Gensim library.
  The current version writes CSVs as output under 'output' directory in project. One for retrieved topics along with corresponding words and another csv containing topic distribution for raw texts (unseen documents can be used)
  
- NOTE: Delete contents of data dir (which will store dictionary and corpus) if texts or documents changes on which topic modeling is performed. 
+ **NOTE:** Delete contents of data dir (which will store dictionary and corpus) if texts or documents changes on which topic modeling is performed. 
 
 **Version : 1.1**
 
