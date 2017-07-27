@@ -26,21 +26,19 @@ raw_text_pkl_path = os.path.join(ROOT_DIR, "data/raw_text.pkl")
 
 def store_raw_text(data):
     """
-    used to store raw text as pickle file
+    Stores raw text as pickle file
     :param data: raw data as list
     :return: None
     """
-
-    if os.path.exists(raw_text_pkl_path):
-        os.remove(raw_text_pkl_path)
-
+    
+    # 'wb' over writes if file already exists. So no need to remove file first.
     with open(raw_text_pkl_path, 'wb') as f:
         pickle.dump(data, f)
 
 
 def get_raw_text():
     """
-    used to retrieve raw data which was stored as pickle file
+    Retrieves raw data which was stored as pickle file
     :return: raw data
     """
 
@@ -56,7 +54,7 @@ def get_raw_text():
 
 def get_stop_words_set():
     """
-    returns set of stop words for english language. Lookup in a set is faster than a list.
+    Returns set of stop words for english language. Lookup in a set is faster than a list.
      Other libs can also be used such as nltk stop_words. But the one used here is larger than nltk stop words list
     :return: set of stop words
     """
@@ -66,7 +64,7 @@ def get_stop_words_set():
 
 def get_punctuations_set():
     """
-    return a set of punctuations from string module of python. Lookup in a set is faster than a list.
+    Returns a set of punctuations from string module of python. Lookup in a set is faster than a list.
     :return: set of punctuations
     """
 
@@ -123,7 +121,7 @@ def get_data():
 
 def get_dictionary(data):
     """
-    Used to form a dictionary from list of texts after performing part of speech tagging, cleaning text for stop words,
+    Forms a dictionary from list of texts after performing part of speech tagging, cleaning text for stop words,
      punctuations and digits and then Lemmatizing words.
      The order of steps is important here.
      POS tagging should be performed before removing stop words and punctuations to get better pos tags for words.
@@ -229,7 +227,7 @@ def get_lda(dictionary, corpus):
 
 def topic_words_dict(lda_model):
     """
-    Finds 'num_topics' number of topics from the LDA model passed as param,
+    Used for finding 'num_topics' number of topics from the LDA model passed as param,
      where each topic has 'num_words' number of prominent words.
 
     The values for :argument 'num_topics' and :argument 'num_words' for show_topics method is retrieved
@@ -275,7 +273,7 @@ def topic_words_dict(lda_model):
 
 def text_to_topic(texts, model):
     """
-    Finds topic distribution for each document or text in texts.
+    Helps in finding topic distribution for each document or text in texts.
     Uses the trained LDA model to figure out which topic(s) a text belongs to with percentage for each topic.
     The same raw texts are used but new unseen documents can also be used on the trained LDA model.
 
