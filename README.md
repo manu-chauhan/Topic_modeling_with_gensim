@@ -3,9 +3,7 @@
 ![alt tag](https://3.bp.blogspot.com/-oFzTVKm_ciU/VVOXnaLMnSI/AAAAAAAABKw/gL4Hke4_z-Y/s1600/DataScienceEngineering_TagCloud_800.jpg)
 
 
-
-
-## Topic Modeling with Gensim library in Python3 ##
+________________________________________________________________________________________________________________________________________
 
 **Copyright (C) 2017 Manu Chauhan (manuchauhan1992@gmail.com)**
 
