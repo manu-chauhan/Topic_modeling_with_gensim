@@ -18,15 +18,17 @@ Gensim is Licensed under  GNU LGPLv2.1 which requires modifications to Gensim (i
  **NOTE:** Delete contents of data dir (which will store dictionary and corpus) if texts or documents changes on which topic modeling is performed. 
 
 **Version : 1.1**
+Next version will use word cloud to display prominent words for each topic.
 
 ### How do I get set up? ###
 
- **Summary of set up:** Basic setup (BTW I used Pycharm IDE community version) with required modules installed.
+ **Summary of set up:** Basic setup (I used Pycharm IDE community version) with required modules installed.
  
  Main_file.py is the main file of the project.
+ 
  Utils.py contains utility methods such as reading config sections from config.properties.
  
- Configure config.properties file to connect to database and modify Sql query accordingly.
+ Configure config.properties file to connect to database and modify Sql query accordingly. (postgres as of now, will add mysql connectivity in later versions)
 
  **Configuration:** Config file includes sections for database, sql query and LDA model parameters.
 
