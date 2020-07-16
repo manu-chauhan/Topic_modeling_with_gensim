@@ -5,7 +5,6 @@
 
 ________________________________________________________________________________________________________________________________________
 
-**Copyright (C) 2017 Manu Chauhan (manuchauhan1992@gmail.com)**
 
 Gensim is Licensed under  GNU LGPLv2.1 which requires modifications to Gensim (if any and if distributed to others) to be open sourced. For  more info : https://radimrehurek.com/gensim/about.html
 
